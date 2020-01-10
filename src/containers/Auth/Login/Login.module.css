@@ -1,4 +1,4 @@
-.Auth {
+.Login {
     text-align: center;
     width: 80%;
     margin: 20px auto;
@@ -13,7 +13,7 @@
 }
 
 @media (min-width: 600px) {
-    .Auth {
+    .Login {
         width: 500px;
     }
 }

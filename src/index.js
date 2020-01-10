@@ -7,15 +7,16 @@ import thunk from 'redux-thunk';
 
 import './index.module.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-import authReducer from './store/reducers/auth';
+import * as serviceWorker from './serviceWorker';
+import signupReducer from './store/reducers/signup';
+import loginReducer from './store/reducers/login'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
-    auth: authReducer
+    signup: signupReducer,
+    login: loginReducer
 });
-
 
 const store = createStore(rootReducer, composeEnhancers(
     applyMiddleware(thunk)
@@ -29,4 +30,4 @@ const app = (
     </Provider>
 );
 ReactDOM.render(app, document.getElementById('root'));
-registerServiceWorker();
+serviceWorker.unregister();

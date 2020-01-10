@@ -1,6 +1,12 @@
 export {
-    auth,
+    login,
     logout,
-    setAuthRedirectPath,
-    authCheckState
-} from './auth';
+    setLoginRedirectPath,
+    loginCheckState
+} from './login';
+
+export {
+    signup,
+    setSignupRedirectPath,
+    signupCheckState
+} from './signup';
