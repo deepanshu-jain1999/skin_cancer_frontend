@@ -4,7 +4,6 @@ import { updateObject } from '../utility';
 
 const initialState = {
     token: null,
-    userId: null,
     error: null,
     loading: false,
     loginRedirectPath: '/'
@@ -17,7 +16,6 @@ const loginStart = (state, action) => {
 const loginSuccess = (state, action) => {
     return updateObject(state, {
         token: action.token,
-        userId: action.userId,
         error: null,
         loading: false});
 };

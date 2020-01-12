@@ -1,0 +1,9 @@
+.GridContainer {
+  display: grid;
+  height: 400px;
+  align-content: start;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}

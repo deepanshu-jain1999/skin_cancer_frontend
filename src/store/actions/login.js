@@ -8,11 +8,10 @@ export const loginStart = () => {
     };
 };
 
-export const loginSuccess = (token, userId) => {
+export const loginSuccess = (token) => {
     return {
         type: actionTypes.LOGIN_SUCCESS,
         token: token,
-        userId: userId
     };
 };
 
@@ -25,13 +24,12 @@ export const loginFail = (error) => {
 
 export const logout = () => {
     localStorage.removeItem('token');
-    localStorage.removeItem('userId');
     return {
         type: actionTypes.LOGIN_LOGOUT
     };
 };
 
-export const login = (email, password, isSignup) => {
+export const login = (email, password) => {
     return dispatch => {
         dispatch(loginStart());
         const loginData = {
@@ -42,9 +40,8 @@ export const login = (email, password, isSignup) => {
         axios.post(url, loginData)
             .then(res => {
                 console.log(res);
-                localStorage.setItem('token', res.data.idToken);
-                localStorage.setItem('userId', res.data.localId);
-                dispatch(loginSuccess(res.data.idToken, res.data.localId));
+                localStorage.setItem('token', res.data.token);
+                dispatch(loginSuccess(res.data.token));
             })
             .catch(err => {
                 console.log(err);
