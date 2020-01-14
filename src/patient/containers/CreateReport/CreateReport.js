@@ -7,6 +7,7 @@ import Spinner from '../../../components/UI/Spinner/Spinner'
 import Input from '../../../components/UI/Input/Input';
 import withErrorHandler from "../../../hoc/WithErrorHandler/WithErrorHandler";
 import * as createReportActions from '../../store/actions/index';
+import { Redirect } from 'react-router-dom';
 
 class CreateReport extends Component{
     state = {
@@ -35,10 +36,8 @@ class CreateReport extends Component{
         for(let formElementIdentifier in this.state.createReportForm){
             formData[formElementIdentifier]=this.state.createReportForm[formElementIdentifier].value;
         }
-        const report = {
-            createReportData: formData,
-        };
-        this.props.onCreateReport(report, this.props.token);
+
+        this.props.onCreateReport(formData, this.props.token);
     };
 
     checkValidity(value, rules){
@@ -89,8 +88,10 @@ class CreateReport extends Component{
                 config: this.state.createReportForm[key]
             });
         }
+        const createdRedirect = (this.props.created) ? <Redirect to={'/see-report'}/> : null;
         let form = (
                 <form onSubmit={this.createReportHandler}>
+                    {createdRedirect}
                     {formElementsArray.map(formElement => (
                         <Input
                         key={formElement.id}
@@ -120,6 +121,7 @@ class CreateReport extends Component{
 const mapStateToProps = state => {
     return {
         loading: state.report.loading,
+        created: state.report.created,
         token: state.login.token
     }
 };

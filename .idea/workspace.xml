@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da552591-1616-47aa-af06-9b75e0a665cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/doctor/store/utility.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/containers/CreateReport/CreateReport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/containers/CreateReport/CreateReport.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/containers/Home/PatientHome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/containers/Home/PatientHome.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/store/actions/actionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/store/actions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/store/actions/report.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/store/reducers/report.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/store/utility.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patient/components/SeeReport/SeeReport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/components/SeeReport/SeeReport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patient/components/SeeReport/SeeReport.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/components/SeeReport/SeeReport.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patient/containers/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doctor/store/actions/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patient/containers/Home/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/doctor/store/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patient/containers/SeeReports/SeeReports.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/containers/SeeReports/SeeReports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patient/containers/CreateReport/CreateReport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/containers/CreateReport/CreateReport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patient/store/actions/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/store/actions/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patient/store/reducers/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/store/reducers/report.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../burger/burger-builder" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../skin_cancer_detection" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -88,7 +72,9 @@
       <workItem from="1578564519096" duration="8033000" />
       <workItem from="1578575741281" duration="5464000" />
       <workItem from="1578649256061" duration="17045000" />
-      <workItem from="1578822843448" duration="6852000" />
+      <workItem from="1578822843448" duration="6948000" />
+      <workItem from="1578916249833" duration="6257000" />
+      <workItem from="1579001556118" duration="2674000" />
     </task>
     <servers />
   </component>
@@ -100,13 +86,13 @@
       <screen x="77" y="35" width="1843" height="1045" />
     </state>
     <state x="666" y="247" width="655" height="628" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/77.35.1843.1045@77.35.1843.1045" timestamp="1578571775703" />
-    <state x="728" y="258" width="530" height="605" key="FileChooserDialogImpl" timestamp="1578823281799">
+    <state x="728" y="258" width="530" height="605" key="FileChooserDialogImpl" timestamp="1579001613551">
       <screen x="77" y="35" width="1843" height="1045" />
     </state>
-    <state x="728" y="258" width="530" height="605" key="FileChooserDialogImpl/77.35.1843.1045@77.35.1843.1045" timestamp="1578823281799" />
-    <state x="566" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1578823247926">
+    <state x="728" y="258" width="530" height="605" key="FileChooserDialogImpl/77.35.1843.1045@77.35.1843.1045" timestamp="1579001613551" />
+    <state x="566" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1579001578399">
       <screen x="77" y="35" width="1843" height="1045" />
     </state>
-    <state x="566" y="346" key="com.intellij.ide.util.TipDialog/77.35.1843.1045@77.35.1843.1045" timestamp="1578823247926" />
+    <state x="566" y="346" key="com.intellij.ide.util.TipDialog/77.35.1843.1045@77.35.1843.1045" timestamp="1579001578399" />
   </component>
 </project>

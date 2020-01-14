@@ -28,9 +28,10 @@ const createReportStart = (state, action) => {
 };
 
 const createReportSuccess = (state, action) => {
-    const newReport = action.reportData;
+    const newReport = action.createReportData;
+    console.log("newReport->", newReport);
     return updateObject(state, {
-        reports: state.reports.concat(newReport),
+        reports: state.reports,
         created: true,
         loading: false});
 };

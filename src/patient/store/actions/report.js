@@ -29,21 +29,13 @@ export const fetchReports = (token) => {
             "Content-Type": "application/json",
         };
         headers["Authorization"] = `Token ${token}`;
-
         console.log(token);
-         axios.get('http://localhost:8000/api/report.json', {headers, })
+        axios.get('http://localhost:8000/api/report.json', {headers, })
             .then(res => {
-            const fetchedReports = [];
-            for(let key in res.data){
-                fetchedReports.push({
-                    ...res.data[key],
-                    id: key
-                });
-            }
-            dispatch(fetchReportsSuccess(fetchedReports));
+                dispatch(fetchReportsSuccess(res.data));
         })
             .catch(err => {
-            dispatch(fetchReportsFail(err));
+                dispatch(fetchReportsFail(err));
         });
     };
 
@@ -53,7 +45,7 @@ export const fetchReports = (token) => {
 export const createReportSuccess = (reportData) => {
     return {
         type: actionTypes.CREATE_REPORT_SUCCESS,
-        orderData: reportData
+        createReportData: reportData
     };
 };
 
@@ -81,16 +73,14 @@ export const createReport = (reportData, token) => {
          dispatch(createReportStart());
          let headers = {
             "Content-Type": "application/json",
-        };
-        headers["Authorization"] = `Token ${token}`;
-        console.log("report->data"+reportData);
+         };
+         headers["Authorization"] = `Token ${token}`;
          axios.post('http://localhost:8000/api/report.json', reportData, {headers: headers})
-            .then(response => {
-                console.log('[after start]', response.data);
-                dispatch(createReportSuccess(reportData))
-            })
-            .catch(error => {
-                dispatch(createReportFail(error))
-            })
+             .then(response => {
+                 dispatch(createReportSuccess(response.data))
+             })
+             .catch(error => {
+                 dispatch(createReportFail(error))
+             })
     };
 };
