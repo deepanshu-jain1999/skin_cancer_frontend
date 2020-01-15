@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da552591-1616-47aa-af06-9b75e0a665cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/patient/components/SeeReportImage/SeeReportImage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/components/SeeReportImage/SeeReportImage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/containers/AddImageToReport/AddImageToReport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/containers/AddImageToReport/AddImageToReport.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/containers/SeeReportImages/SeeReportImages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/containers/SeeReportImages/SeeReportImages.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/store/actions/report_image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/store/reducers/report_image.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patient/containers/CreateReport/CreateReport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/containers/CreateReport/CreateReport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patient/store/actions/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/store/actions/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patient/store/reducers/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/store/reducers/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patient/containers/Home/PatientHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/containers/Home/PatientHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patient/store/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/store/actions/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patient/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/store/actions/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +44,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../skin_cancer_detection" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/patient/components" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/patient/containers" />
+      <recent name="$PROJECT_DIR$/src/patient/components" />
+      <recent name="$PROJECT_DIR$/src/patient/components/SeeReportImages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/patient/components" />
       <recent name="$PROJECT_DIR$/src/doctor" />
     </key>
   </component>
@@ -74,7 +90,9 @@
       <workItem from="1578649256061" duration="17045000" />
       <workItem from="1578822843448" duration="6948000" />
       <workItem from="1578916249833" duration="6257000" />
-      <workItem from="1579001556118" duration="2674000" />
+      <workItem from="1579001556118" duration="2931000" />
+      <workItem from="1579012404061" duration="552000" />
+      <workItem from="1579060559400" duration="10303000" />
     </task>
     <servers />
   </component>
@@ -90,9 +108,9 @@
       <screen x="77" y="35" width="1843" height="1045" />
     </state>
     <state x="728" y="258" width="530" height="605" key="FileChooserDialogImpl/77.35.1843.1045@77.35.1843.1045" timestamp="1579001613551" />
-    <state x="566" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1579001578399">
+    <state x="566" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1579060605581">
       <screen x="77" y="35" width="1843" height="1045" />
     </state>
-    <state x="566" y="346" key="com.intellij.ide.util.TipDialog/77.35.1843.1045@77.35.1843.1045" timestamp="1579001578399" />
+    <state x="566" y="346" key="com.intellij.ide.util.TipDialog/77.35.1843.1045@77.35.1843.1045" timestamp="1579060605581" />
   </component>
 </project>

@@ -11,13 +11,15 @@ import * as serviceWorker from './serviceWorker';
 import signupReducer from './store/reducers/signup';
 import loginReducer from './store/reducers/login';
 import reportReducer from './patient/store/reducers/report';
+import reportImageReducer from './patient/store/reducers/report_image';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
     signup: signupReducer,
     login: loginReducer,
-    report: reportReducer
+    report: reportReducer,
+    report_image: reportImageReducer,
 });
 
 const store = createStore(rootReducer, composeEnhancers(

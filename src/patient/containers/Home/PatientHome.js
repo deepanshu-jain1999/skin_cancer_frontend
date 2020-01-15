@@ -16,7 +16,7 @@ class PatientHome extends Component {
                 <Link to="/create-report">
                      <div>Create Report</div>
                 </Link>
-                <Link to="/home">
+                <Link to="/report-images">
                      <div>See All Appointments</div>
                 </Link>
                 <Link to="/home">
