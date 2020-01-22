@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da552591-1616-47aa-af06-9b75e0a665cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/patient/components/SeeReportImage/SeeReportImage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/components/SeeReportImage/SeeReportImage.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/containers/AddImageToReport/AddImageToReport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/containers/AddImageToReport/AddImageToReport.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/containers/SeeReportImages/SeeReportImages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/containers/SeeReportImages/SeeReportImages.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/store/actions/report_image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/patient/store/reducers/report_image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/containers/Profile/SeeProfile/Profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/containers/Profile/SeeProfile/Profile.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/containers/Profile/UpdateProfile/UpdateProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/containers/Profile/UpdateProfile/UpdateProfile.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/store/actions/profile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/patient/store/reducers/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patient/containers/Home/PatientHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/containers/Home/PatientHome.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/patient/store/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/store/actions/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patient/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/patient/store/actions/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +47,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/patient/containers/Profile/SeeProfile" />
       <recent name="$PROJECT_DIR$/src/patient/containers" />
       <recent name="$PROJECT_DIR$/src/patient/components" />
       <recent name="$PROJECT_DIR$/src/patient/components/SeeReportImages" />
@@ -92,7 +88,8 @@
       <workItem from="1578916249833" duration="6257000" />
       <workItem from="1579001556118" duration="2931000" />
       <workItem from="1579012404061" duration="552000" />
-      <workItem from="1579060559400" duration="10303000" />
+      <workItem from="1579060559400" duration="14418000" />
+      <workItem from="1579182605571" duration="826000" />
     </task>
     <servers />
   </component>
