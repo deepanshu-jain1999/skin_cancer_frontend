@@ -8,9 +8,11 @@ import PatientHome from './patient/containers/Home/PatientHome';
 import CreateReport from "./patient/containers/CreateReport/CreateReport";
 import SeeReports from "./patient/containers/SeeReports/SeeReports";
 import SeeReportImages from "./patient/containers/SeeReportImages/SeeReportImages";
+import Profile from "./patient/containers/Profile/SeeProfile/SeeProfile";
 import Logout from "./containers/Auth/Logout/Logout";
 import Layout from './hoc/Layout/Layout';
 import * as actions from './store/actions/index';
+
 
 class App extends Component {
     componentDidMount() {
@@ -31,6 +33,7 @@ class App extends Component {
                     {/*<Route path="/checkout" component={Checkout}/>*/}
                     {/*<Route path="/orders" component={Orders}/>*/}
                     <Route path="/logout" component={Logout}/>
+                    <Route path="/profile" component={Profile}/>
                     <Route path="/report-images" component={SeeReportImages}/>
                     <Route path="/see-report" exact component={SeeReports}/>
                     <Route path="/create-report" exact component={CreateReport}/>

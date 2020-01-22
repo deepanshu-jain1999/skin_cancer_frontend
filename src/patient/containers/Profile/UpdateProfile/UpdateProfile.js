@@ -1,7 +1,7 @@
 // import React, { Component} from 'react';
 // import { connect } from 'react-redux';
 // import Button from '../../../../components/UI/Button/Button';
-// import classes from './Profile.module.css';
+// import classes from './SeeProfile.module.css';
 // import axios from '../../../../axios-orders';
 // import Spinner from '../../../../components/UI/Spinner/Spinner'
 // import Input from '../../../../components/UI/Input/Input';
@@ -15,7 +15,7 @@
 //                 elementType: 'input',
 //                 elementConfig: {
 //                     type: 'file',
-//                     placeholder: 'Your profile pic'
+//                     placeholder: 'Your profile.js pic'
 //                 },
 //                 value: '',
 //                 validation: {
@@ -162,8 +162,8 @@
 //
 // const mapStateToProps = state => {
 //     return {
-//         profileData: state.profile.profileData,
-//         loading: state.profile.loading,
+//         profileData: state.profile.js.profileData,
+//         loading: state.profile.js.loading,
 //         token: state.login.token,
 //     }
 // };

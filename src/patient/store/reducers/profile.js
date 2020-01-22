@@ -2,7 +2,7 @@ import * as actionTypes from '../actions/actionTypes';
 import { updateObject } from '../utility';
 
 const initialState = {
-    profileData: '',
+    profileData: "",
     loading: false,
     updated: false
 };
@@ -12,7 +12,8 @@ const fetchProfileStart = (state, action) => {
 };
 
 const fetchProfileSuccess = (state, action) => {
-    return updateObject(state, {reports: action.profileData, loading: false});
+    console.log("ggg="+action.profileData);
+    return updateObject(state, {profileData: action.profileData, loading: false});
 };
 
 const fetchProfileFail = (state, action) => {
@@ -51,17 +52,17 @@ const reducer = (state = initialState, action) => {
         case actionTypes.FETCH_REPORTS_FAIL:
             return fetchProfileFail(state, action);
 
-        case actionTypes.CREATE_REPORT_INIT:
-            return updateProfileInit(state, action);
-
-        case actionTypes.CREATE_REPORT_START:
-            return updateProfileStart(state, action);
-
-        case actionTypes.CREATE_REPORT_SUCCESS:
-            return updateProfileSuccess(state, action);
-
-        case actionTypes.CREATE_REPORT_FAIL:
-            return updateProfileFail(state, action);
+        // case actionTypes.CREATE_REPORT_INIT:
+        //     return updateProfileInit(state, action);
+        //
+        // case actionTypes.CREATE_REPORT_START:
+        //     return updateProfileStart(state, action);
+        //
+        // case actionTypes.CREATE_REPORT_SUCCESS:
+        //     return updateProfileSuccess(state, action);
+        //
+        // case actionTypes.CREATE_REPORT_FAIL:
+        //     return updateProfileFail(state, action);
 
         default:
             return state;

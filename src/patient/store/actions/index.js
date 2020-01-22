@@ -9,3 +9,9 @@ export {
     createReportImageInit,
     fetchReportImages
 } from './report_image'
+
+export {
+    fetchProfile,
+    updateProfileInit,
+    updateProfile
+} from './profile'
