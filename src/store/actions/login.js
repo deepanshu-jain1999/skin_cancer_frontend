@@ -35,7 +35,7 @@ export const login = (email, password) => {
             username: email,
             password: password,
         };
-        let url = 'http://localhost:8000/api/login/';
+        let url = 'http://api-skin-cancer.herokuapp.com/api/login/';
         axios.post(url, loginData)
             .then(res => {
                 console.log(res);

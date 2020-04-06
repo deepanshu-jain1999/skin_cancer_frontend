@@ -35,7 +35,7 @@ export const createReportImage = (reportImageData, token) => {
             "Content-Type": "application/json",
          };
          headers["Authorization"] = `Token ${token}`;
-         axios.post('http://localhost:8000/api/report.json', reportImageData, {headers: headers})
+         axios.post('http://api-skin-cancer.herokuapp.com/api/report.json', reportImageData, {headers: headers})
              .then(response => {
                  dispatch(createReportImageSuccess(response.data))
              })
@@ -74,7 +74,7 @@ export const fetchReportImages = (token) => {
         };
         headers["Authorization"] = `Token ${token}`;
         console.log(token);
-        axios.get('http://localhost:8000/api/report-images.json', {headers, })
+        axios.get('http://api-skin-cancer.herokuapp.com/api/report-images.json', {headers, })
             .then(res => {
                 console.log(res.data);
                 dispatch(fetchReportImagesSuccess(res.data));

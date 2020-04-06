@@ -39,7 +39,7 @@ export const signup = (username, email, password, isPatient) => {
             isPatient: true,
             isDoctor: false
         };
-        let url = 'http://127.0.0.1:8000/api/signup/';
+        let url = 'http://api-skin-cancer.herokuapp.com/api/signup/';
         axios.post(url, signupData)
             .then(res => {
                 console.log(res);

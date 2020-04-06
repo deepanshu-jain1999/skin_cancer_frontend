@@ -30,7 +30,7 @@ export const fetchReports = (token) => {
         };
         headers["Authorization"] = `Token ${token}`;
         console.log(token);
-        axios.get('http://localhost:8000/api/report.json', {headers, })
+        axios.get('http://api-skin-cancer.herokuapp.com/api/report.json', {headers, })
             .then(res => {
                 dispatch(fetchReportsSuccess(res.data));
         })
@@ -75,7 +75,7 @@ export const createReport = (reportData, token) => {
             "Content-Type": "application/json",
          };
          headers["Authorization"] = `Token ${token}`;
-         axios.post('http://localhost:8000/api/report.json', reportData, {headers: headers})
+         axios.post('http://api-skin-cancer.herokuapp.com/api/report.json', reportData, {headers: headers})
              .then(response => {
                  dispatch(createReportSuccess(response.data))
              })
